@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hathras ka Apna Store - Fresh Grocery Delivered Fast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Hathras ka Apna Store</div>
+            <div class="nav-search">
+                <input type="text" id="search-bar" placeholder="Search groceries...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="nav-right">
+                <span class="location">📍 Hathras</span>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="cart.html" class="nav-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Fresh Grocery Delivered Fast in Hathras</h1>
+        <p>10-20 Minutes Delivery</p>
+        <button class="btn-primary">Shop Now</button>
+    </section>
+
+    <!-- Grocery Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-card" onclick="window.location.href='products.html?category=fruits'">
+                <img src="https://images.unsplash.com/photo-1518843875459-f97ae1b3b4b0?w=150&h=150&fit=crop" alt="Fruits & Vegetables">
+                <p>Fruits & Vegetables</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=dairy'">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=150&h=150&fit=crop" alt="Dairy & Bakery">
+                <p>Dairy & Bakery</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=snacks'">
+                <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=150&h=150&fit=crop" alt="Snacks & Biscuits">
+                <p>Snacks & Biscuits</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=atta'">
+                <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=150&h=150&fit=crop" alt="Atta, Rice & Dal">
+                <p>Atta, Rice & Dal</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=beverages'">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=150&h=150&fit=crop" alt="Beverages">
+                <p>Beverages</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=personal'">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=150&h=150&fit=crop" alt="Personal Care">
+                <p>Personal Care</p>
+            </div>
+            <div class="category-card" onclick="window.location.href='products.html?category=household'">
+                <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=150&h=150&fit=crop" alt="Household Items">
+                <p>Household Items</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Deals -->
+    <section class="deals">
+        <h2>Best Deals</h2>
+        <div class="deal-grid" id="deal-grid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Fresh groceries delivered fast in Hathras.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@hathrasstore.com</p>
+                <p>Phone: +91-1234567890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
