@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Success - Hathras ka Apna Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Hathras ka Apna Store</div>
+            <div class="nav-search">
+                <input type="text" id="search-bar" placeholder="Search groceries...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="nav-right">
+                <span class="location">📍 Hathras</span>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="cart.html" class="nav-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Success -->
+    <section class="success">
+        <h1>🎉 Order Placed Successfully!</h1>
+        <p>Your order will be delivered in 15-30 minutes.</p>
+        <p>Thank you for shopping with Hathras ka Apna Store!</p>
+        <button class="btn-primary" onclick="window.location.href='index.html'">Continue Shopping</button>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

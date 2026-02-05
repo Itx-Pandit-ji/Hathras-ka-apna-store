@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Hathras ka Apna Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Hathras ka Apna Store</div>
+            <div class="nav-search">
+                <input type="text" id="search-bar" placeholder="Search groceries...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="nav-right">
+                <span class="location">📍 Hathras</span>
+                <a href="login.html" class="nav-link">Login</a>
+                <a href="cart.html" class="nav-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Filters and Sort -->
+    <section class="filters">
+        <div class="filter-container">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="fruits">Fruits & Vegetables</option>
+                <option value="dairy">Dairy & Bakery</option>
+                <!-- Add more -->
+            </select>
+            <select id="sort-filter">
+                <option value="popularity">Sort by Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="product-grid" id="product-grid">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
